@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Discover the day of the week you were born with our Birthday Magic Calculator. Enter your birth date and unveil the mystery behind your special day.">
+    <meta name="keywords" content="birthday day calculator, birth day of the week, find your birth day, birthday magic, birth date calculator, discover birth day">
+    <meta name="author" content="Anubhav">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Birthday Day Magic Calculator - Discover Your Birth Day">
+    <meta property="og:description" content="Enter your birthday and discover the day of the week you were born! Birthday Magic makes it easy to unlock this mystery.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags for sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Birthday Magic Calculator">
+    <meta name="twitter:description" content="Unlock the mystery of your birth day! Enter your birthday and find out which day of the week you were born on.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="@Anubhav">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="">
+
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/x-icon">
+
+    <title>Birthday Day Calculator</title>
+    <!-- Author - Anubhav -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="background-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="container">
+        <h1>Birthday Magic</h1>
+        <p>Unlock the mystery of your birth day! Enter your birthday below and discover which day of the week welcomed you into the world.</p>
+        <form id="birthdayForm">
+            <div class="input-group">
+                <label for="day">Day</label>
+                <input type="number" id="day" min="1" max="31" required placeholder="DD">
+            </div>
+            <div class="input-group">
+                <label for="month">Month</label>
+                <input type="number" id="month" min="1" max="12" required placeholder="MM">
+            </div>
+            <div class="input-group">
+                <label for="year">Year</label>
+                <input type="number" id="year" min="1" required placeholder="YYYY">
+            </div>
+            <button type="submit">Reveal My Day</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
